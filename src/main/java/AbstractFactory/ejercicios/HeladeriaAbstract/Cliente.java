@@ -1,0 +1,131 @@
+package AbstractFactory.ejercicios.HeladeriaAbstract;
+
+public class Cliente {
+    public static void main (String []as) {
+        HeladoAgua h1 = (HeladoAgua) FactoryHelados.make(FactoryHelados.typeHelados.HeladoAgua);
+        Base b1 = new Base();
+            b1.setCosto("10");
+            b1.setNombre("cono");
+            b1.setTipo("cono");
+            b1.setTamano("pequeño");
+        h1.setBase(b1);
+        h1.setForma("Cono");
+        Fruta f1 = new Fruta();
+            f1.setCosto("5");
+            f1.setTipoFruta("citrico");
+            f1.setNombre("naranja");
+            f1.setTamano("pequeña");
+        h1.setFruta(f1);
+        h1.setTamano("pequeño");
+        h1.crearHelado("********CREANDO HELADO DE AGUA 1*******");
+
+        HeladoAgua h2 = (HeladoAgua) FactoryHelados.make(FactoryHelados.typeHelados.HeladoAgua);
+        Base b2 = new Base();
+        b2.setCosto("10");
+        b2.setNombre("cono");
+        b2.setTipo("cono");
+        b2.setTamano("pequeño");
+        h2.setBase(b2);
+        h2.setForma("Cono");
+        Fruta f2 = new Fruta();
+        f2.setCosto("5");
+        f2.setTipoFruta("citrico");
+        f2.setNombre("naranja");
+        f2.setTamano("pequeña");
+        h2.setFruta(f2);
+        h2.setTamano("pequeño");
+        h2.crearHelado("********CREANDO HELADO DE AGUA 2*******");
+
+        HeladoCrema h3 = (HeladoCrema) FactoryHelados.make(FactoryHelados.typeHelados.HeladoCrema);
+        Base b3 = new Base();
+        b3.setCosto("10");
+        b3.setNombre("cono");
+        b3.setTipo("cono");
+        b3.setTamano("pequeño");
+        h3.setBase(b3);
+        h3.setForma("Cono");
+        Fruta f3 = new Fruta();
+        f3.setCosto("5");
+        f3.setTipoFruta("citrico");
+        f3.setNombre("naranja");
+        f3.setTamano("pequeña");
+        h3.setFruta(f3);
+        h3.setTamano("pequeño");
+        Crema c1 = new Crema();
+        c1.setCosto("10");
+        c1.setMarca("PIL");
+        c1.setSabor("Vainilla");
+        h3.setCrema(c1);
+        h3.crearHelado("********CREANDO HELADO DE AGUA 3*******");
+
+        HeladoCrema h4 = (HeladoCrema) FactoryHelados.make(FactoryHelados.typeHelados.HeladoCrema);
+        Base b4 = new Base();
+        b4.setCosto("10");
+        b4.setNombre("cono");
+        b4.setTipo("cono");
+        b4.setTamano("pequeño");
+        h4.setBase(b4);
+        h4.setForma("Cono");
+        Fruta f4 = new Fruta();
+        f4.setCosto("5");
+        f4.setTipoFruta("citrico");
+        f4.setNombre("naranja");
+        f4.setTamano("pequeña");
+        h4.setFruta(f4);
+        h4.setTamano("pequeño");
+        Crema c2 = new Crema();
+        c2.setCosto("10");
+        c2.setMarca("PIL");
+        c2.setSabor("Vainilla");
+        h4.setCrema(c2);
+        h4.crearHelado("********CREANDO HELADO DE AGUA 4*******");
+
+        HeladoMixto h5 = (HeladoMixto) FactoryHelados.make(FactoryHelados.typeHelados.HeladoMixto);
+        Base b5 = new Base();
+        b5.setCosto("10");
+        b5.setNombre("cono");
+        b5.setTipo("cono");
+        b5.setTamano("pequeño");
+        h5.setBase(b5);
+        h5.setForma("Cono");
+        Fruta f5 = new Fruta();
+        f5.setCosto("5");
+        f5.setTipoFruta("citrico");
+        f5.setNombre("naranja");
+        f5.setTamano("pequeña");
+        h5.setFruta(f5);
+        h5.setTamano("pequeño");
+        Crema c3 = new Crema();
+        c3.setCosto("10");
+        c3.setMarca("PIL");
+        c3.setSabor("Vainilla");
+        h5.setCrema(c3);
+        h5.setCosto("15");
+        h5.crearHelado("********CREANDO HELADO DE AGUA 5*******");
+
+        HeladoMixto h6 = (HeladoMixto) FactoryHelados.make(FactoryHelados.typeHelados.HeladoMixto);
+        Base b6 = new Base();
+        b6.setCosto("10");
+        b6.setNombre("cono");
+        b6.setTipo("cono");
+        b6.setTamano("pequeño");
+        h6.setBase(b6);
+        h6.setForma("Cono");
+        Fruta f6 = new Fruta();
+        f6.setCosto("5");
+        f6.setTipoFruta("citrico");
+        f6.setNombre("naranja");
+        f6.setTamano("pequeña");
+        h6.setFruta(f6);
+        h6.setTamano("pequeño");
+        Crema c4 = new Crema();
+        c4.setCosto("10");
+        c4.setMarca("PIL");
+        c4.setSabor("Vainilla");
+        h6.setCrema(c4);
+        h6.setCosto("15");
+        h6.crearHelado("********CREANDO HELADO DE AGUA 6*******");
+
+
+    }
+}
