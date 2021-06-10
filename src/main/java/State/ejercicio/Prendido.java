@@ -29,9 +29,8 @@
             System.out.println("** Estado: Prendido **");
             cantidadProgramasAbiertos = new Random().nextInt(20);
             cantidadProgramasAbiertos2 = new Random().nextInt(20);
-            List<String> lista = new ArrayList<>();
-            lista.add(" Chrome");
-            lista.add(" Firefox");
+            List<Integer> lista = new ArrayList<>();
+            lista.add(cantidadProgramasAbiertos);
             computadora.setListProgramas(lista);
 
            computadora.setConsumoCPU(cantidadProgramasAbiertos*5);
@@ -40,7 +39,6 @@
             System.out.println("CPU "+ computadora.getConsumoCPU() + "%");
             System.out.println("Memoria Ram "+ computadora.getConsumoMemoriaRam()+ "%");
             System.out.println(" Programas abiertos "+ computadora.getListProgramas().get(0));
-            System.out.println(" Programas abiertos "+ computadora.getListProgramas().get(1));
             System.out.println("********");
         }
     }

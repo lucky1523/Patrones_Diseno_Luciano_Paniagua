@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Computadora {
-    private List<String> listProgramas = new ArrayList<>();
+    private List<Integer> listProgramas = new ArrayList<>();
     private int consumoMemoriaRam;
     private int consumoCPU;
     private IStateComputadora state;
@@ -19,11 +19,11 @@ public class Computadora {
         this.state = state;
     }
 
-    public List<String> getListProgramas() {
+    public List<Integer> getListProgramas() {
         return listProgramas;
     }
 
-    public void setListProgramas(List<String> listProgramas) {
+    public void setListProgramas(List<Integer> listProgramas) {
         this.listProgramas = listProgramas;
     }
 
@@ -42,7 +42,7 @@ public class Computadora {
     public void setConsumoCPU(int consumoCPU) {
         this.consumoCPU = consumoCPU;
     }
-    public void limpiarProgramas(List<String> listProgramas){
+    public void limpiarProgramas(List<Integer> listProgramas){
         listProgramas.clear();
 
     }
