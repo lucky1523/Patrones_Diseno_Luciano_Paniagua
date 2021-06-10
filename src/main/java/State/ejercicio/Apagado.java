@@ -18,7 +18,7 @@ public class Apagado implements IStateComputadora{
         System.out.println("** Estado: Apagado **");
         cantidadProgramasAbiertos = new Random().nextInt(10);
         cantidadProgramasAbiertos2 = new Random().nextInt(10);
-        List<String> lista = new ArrayList<>();
+        List<Integer> lista = new ArrayList<>();
         computadora.setListProgramas(lista);
         computadora.setConsumoCPU(cantidadProgramasAbiertos);
         computadora.setConsumoMemoriaRam(cantidadProgramasAbiertos2);

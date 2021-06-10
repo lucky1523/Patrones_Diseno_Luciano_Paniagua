@@ -7,9 +7,18 @@ import java.util.List;
 
 public class Computadora {
     private List<Integer> listProgramas = new ArrayList<>();
+    private List<String> listProgramasString = new ArrayList<>();
     private int consumoMemoriaRam;
     private int consumoCPU;
     private IStateComputadora state;
+
+    public List<String> getListProgramasString() {
+        return listProgramasString;
+    }
+
+    public void setListProgramasString(List<String> listProgramasString) {
+        this.listProgramasString = listProgramasString;
+    }
 
     public IStateComputadora getState() {
         return state;

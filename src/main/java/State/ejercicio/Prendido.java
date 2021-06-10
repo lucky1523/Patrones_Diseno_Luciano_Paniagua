@@ -30,9 +30,16 @@
             cantidadProgramasAbiertos = new Random().nextInt(20);
             cantidadProgramasAbiertos2 = new Random().nextInt(20);
             List<Integer> lista = new ArrayList<>();
+            List<String> listaString = new ArrayList<>();
             lista.add(cantidadProgramasAbiertos);
-            computadora.setListProgramas(lista);
 
+            int numProgramas=1;
+            for(int i = 1 ;i <= cantidadProgramasAbiertos;i++){
+                listaString.add("Programa"+numProgramas);
+                System.out.println("Programa"+numProgramas);
+                numProgramas++;
+            }
+            computadora.setListProgramas(lista);
            computadora.setConsumoCPU(cantidadProgramasAbiertos*5);
            computadora.setConsumoMemoriaRam(cantidadProgramasAbiertos2*5);
             System.out.println(cantidadProgramasAbiertos+ "*5" + " ------>");
