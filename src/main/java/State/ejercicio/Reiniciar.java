@@ -11,7 +11,7 @@ public class Reiniciar implements IStateComputadora{
     @Override
     public void handler(Computadora computadora) {
         System.out.println("** Estado: Reiniciadno **");
-        List<String> lista = new ArrayList<>();
+        List<Integer> lista = new ArrayList<>();
         computadora.limpiarProgramas(lista);
         computadora.setConsumoCPU(0);
         computadora.setConsumoMemoriaRam(0);
